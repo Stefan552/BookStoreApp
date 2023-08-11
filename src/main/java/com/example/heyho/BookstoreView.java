@@ -14,8 +14,8 @@ public class BookstoreView extends VBox {
     private Button checkoutButton;
     private TableView<Book> cartTableView;
     private Button removeFromCartButton;
-    private Button clearFromDBButton; // Clear book from DTBS button
-    private Button updateBookButton; // UpdateBook button
+    private Button clearFromDBButton;
+    private Button updateBookButton;
     private Button addNewBookButton;
     private Button refreshButton;
 

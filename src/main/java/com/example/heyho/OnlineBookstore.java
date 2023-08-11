@@ -23,7 +23,7 @@ public class OnlineBookstore extends Application {
         BookstoreView bookstoreView = controller.getBookstoreView ();
 
 
-        Image backgroundImage = new Image("istockphoto-1126130554-1024x1024.jpg");
+        Image backgroundImage = new Image( "photoForBack.jpg" );
         BackgroundImage background = new BackgroundImage (
                 backgroundImage,
                 BackgroundRepeat.NO_REPEAT,
