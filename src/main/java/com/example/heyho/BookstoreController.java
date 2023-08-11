@@ -31,13 +31,11 @@ public class BookstoreController {
         view = new BookstoreView();
         bookList = createSampleBookList();
         cartItems = FXCollections.observableArrayList();
-
         setupView();
 
     }
 
     public BookstoreView getBookstoreView() {
-
         return view;
     }
 
@@ -196,7 +194,7 @@ public class BookstoreController {
             double price = Double.parseDouble(priceField.getText());
 
 
-            Book newBook = new Book( id, title, author, price); // Assuming -1 as a placeholder for new book ID
+            Book newBook = new Book( id, title, author, price);
             addBookToDatabase(newBook);
             popupStage.close();
         });

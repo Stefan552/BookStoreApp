@@ -2,12 +2,6 @@ package com.example.heyho;
 
 public class Book {
 
-    public Book ( String title , String author , double price ) {
-        this.title = title;
-        this.author = author;
-        this.price = price;
-    }
-
     private int id;
     private String title;
     private String author;
