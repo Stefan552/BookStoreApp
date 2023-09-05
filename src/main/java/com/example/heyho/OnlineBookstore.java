@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
@@ -22,18 +23,11 @@ public class OnlineBookstore extends Application {
         controller = new BookstoreController();
         BookstoreView bookstoreView = controller.getBookstoreView ();
 
-
         Image backgroundImage = new Image( "photoForBack.jpg" );
-        BackgroundImage background = new BackgroundImage (
-                backgroundImage,
-                BackgroundRepeat.NO_REPEAT,
-                BackgroundRepeat.NO_REPEAT,
-                BackgroundPosition.DEFAULT,
-                new BackgroundSize (BackgroundSize.AUTO, BackgroundSize.AUTO, true , true, true, true)
-        );
-        bookstoreView.setBackground(new Background(background));
-
         BorderPane root = new BorderPane();
+        ImageView ade=new ImageView (backgroundImage);
+
+        root.getChildren ().add ( ade );
         root.setCenter (bookstoreView);
         Scene scene = new Scene(root, 800, 600);
         primaryStage.setTitle("Online Bookstore");
